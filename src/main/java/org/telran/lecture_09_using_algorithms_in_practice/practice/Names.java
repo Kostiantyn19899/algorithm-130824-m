@@ -1,7 +1,6 @@
-package org.telran.lecture_09_using_algorithms_in_practice.practice;
 
-// Дан массив имен.
-// Найдите самое длинное имя, если таких имен несколько - выведи любое их них
+        String[] strings = {"Nik","Konstantin", "Oleg","Max"};
 
-public class Names {
-}
+        Arrays.sort(strings, Comparator.comparing(String::length, Comparator.reverseOrder()));
+        System.out.println(strings[0]);
+    }
